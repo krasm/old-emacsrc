@@ -1,0 +1,5 @@
+(require 'java-mode-indent-annotations)
+(defun mk/java-hook()
+  (java-mode-indent-annotations-setup)
+  )
+(add-hook 'java-mode-common-hook 'mk/java-hook)
