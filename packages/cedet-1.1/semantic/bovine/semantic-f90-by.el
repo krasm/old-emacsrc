@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2010 Free Software Foundation
 
-;; Author:  <a521286@DA342223.fmr.com>
-;; Created: 2013-04-22 10:24:16+0100
+;; Author: krasm <krasm@tp>
+;; Created: 2013-04-22 21:09:45+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

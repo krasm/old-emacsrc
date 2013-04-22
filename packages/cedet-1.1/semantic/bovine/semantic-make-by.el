@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2008 Eric M. Ludlam
 
-;; Author:  <a521286@DA342223.fmr.com>
-;; Created: 2013-04-22 10:24:14+0100
+;; Author: krasm <krasm@tp>
+;; Created: 2013-04-22 21:09:43+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
