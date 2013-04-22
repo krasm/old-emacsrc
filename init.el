@@ -25,7 +25,6 @@
 ;; java stuff
 (load-library "emacs-rc-java")
 
-<<<<<<< HEAD
 ;; org mode
 (load-library "emacs-rc-org")
 
@@ -34,7 +33,7 @@
 
 ;; java script and json
 (load-library "emacs-rc-js")
-=======
+
 ;; cedet 
 (load-library "emacs-rc-cedet")
 
@@ -55,4 +54,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
->>>>>>> 8efc8c81a548034cd3d43f2937bdf8d2ee8f6677
