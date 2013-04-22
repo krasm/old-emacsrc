@@ -23,3 +23,12 @@
 
 ;; java stuff
 (load-library "emacs-rc-java")
+
+;; org mode
+(load-library "emacs-rc-org")
+
+;; lua
+;;(load-library "emacs-rc-lua")
+
+;; java script and json
+(load-library "emacs-rc-js")
