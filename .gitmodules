@@ -1,3 +1,6 @@
 [submodule "packages/pymacs"]
 	path = packages/pymacs
 	url = https://github.com/pinard/Pymacs.git
+[submodule "packages/yasnippet"]
+	path = packages/yasnippet
+	url = https://github.com/capitaomorte/yasnippet
