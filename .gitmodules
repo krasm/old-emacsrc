@@ -4,3 +4,7 @@
 [submodule "packages/yasnippet"]
 	path = packages/yasnippet
 	url = https://github.com/capitaomorte/yasnippet
+
+[submodule "packages/org-mode"]
+	path = packages/org-mode
+	url = git://orgmode.org/org-mode.git

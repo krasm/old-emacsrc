@@ -18,7 +18,7 @@
 ;;(add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode)
 
 ;; Activate semantic
-;;(semantic-mode 1)
+(semantic-mode t)
 
 ;;(require 'semantic/bovine/c)
 ;;(require 'semantic/bovine/clang)
@@ -75,7 +75,7 @@
 (global-srecode-minor-mode 1)
 
 ;; EDE
-(global-ede-mode 1)
+(global-ede-mode t)
 (ede-enable-generic-projects)
 
 ;; helper for boost setup...
@@ -159,7 +159,7 @@
 			      )))
 
 ;; Setup JAVA....
-;;(require 'semantic/db-javap)
+(require 'semantic/db-javap)
 
 ;; example of java-root project
 
