@@ -1,8 +1,9 @@
 ;;; emacs-rc-cedet.el ---
 
-(load-file "~/prj/dotfiles/emacsrc/packages/cedet-1.1/common/cedet.el")
-(load-file "~/prj/dotfiles/emacsrc/packages/cedet-1.1/contrib/cedet-contrib-load.el")
-(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/cedet-1.1/semantic")
+(load-file "~/prj/dotfiles/emacsrc/packages/cedet/cedet-devel-load.el")
+(load-file "~/prj/dotfiles/emacsrc/packages/cedet/contrib/cedet-contrib-load.el")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/cedet/lisp/cedet/")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/cedet/lisp/cedet/semantic")
 
 ;;(add-to-list  'Info-directory-list "~/projects/cedet-bzr/doc/info")
 
@@ -17,11 +18,12 @@
 (add-to-list 'semantic-default-submodes 'global-semantic-highlight-edits-mode)
 ;;(add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode)
 
+(semantic-load-enable-gaudy-code-helpers)
 ;; Activate semantic
-;;(semantic-mode 1)
+(semantic-mode t)
 
-;;(require 'semantic/bovine/c)
-;;(require 'semantic/bovine/clang)
+(require 'semantic/bovine/c)
+(require 'semantic/bovine/clang)
 
 (require 'cedet-files)
 
@@ -75,7 +77,7 @@
 (global-srecode-minor-mode 1)
 
 ;; EDE
-(global-ede-mode 1)
+(global-ede-mode t)
 (ede-enable-generic-projects)
 
 ;; helper for boost setup...
@@ -159,7 +161,7 @@
 			      )))
 
 ;; Setup JAVA....
-;;(require 'semantic/db-javap)
+(require 'semantic/db-javap)
 
 ;; example of java-root project
 
@@ -173,7 +175,7 @@
 (custom-set-variables             ;; Инициализация переменных, указывающих, где 
                                   ;; установлена java
  '(cedet-java-jdk-root (getenv "JAVA_HOME"))
- '(semanticdb-javap-classpath (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar"))
+ '(semanticdb-javap-classpath (lisp (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar")))
 )
 
 (require 'flymake)
