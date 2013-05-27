@@ -4,7 +4,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/python")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/pymacs")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
-(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/org-mode")
+(push "~/prj/dotfiles/emacsrc/packages/org-mode/lisp" load-path)
 
 ;; misc stuff
 (load-library "emacs-rc-misc")
@@ -61,3 +61,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+(put 'downcase-region 'disabled nil)

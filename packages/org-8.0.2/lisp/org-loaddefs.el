@@ -1766,7 +1766,7 @@ replace any running timer.
 ;;;***
 
 ;;;### (autoloads (org-git-version org-release) "org-version" "org-version.el"
-;;;;;;  (20881 63435))
+;;;;;;  (20883 18613))
 ;;; Generated autoloads from org-version.el
 
 (autoload 'org-release "org-version" "\
