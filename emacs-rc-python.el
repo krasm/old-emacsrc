@@ -108,9 +108,10 @@
   ; 5) Try to do a regular python indent.
   ; 6) If at the end of a word, try autocomplete.
 (define-key python-mode-map "\t" 'yas-expand)
-;; (add-hook 'python-mode-hook
-;;           (lambda ()
-;;             (set (make-local-variable 'yas/trigger-fallback) 'ryan-python-expand-after-yasnippet)))
+ (add-hook 'python-mode-hook
+           (lambda ()
+             (set (make-local-variable 'yas/trigger-fallback) 'ryan-python-expand-after-yasnippet)))
+
 (defun ryan-indent ()
   "Runs indent-for-tab-command but returns t if it actually did an indent; nil otherwise"
   (let ((prev-point (point)))
@@ -118,6 +119,7 @@
     (if (eql (point) prev-point)
         nil
       t)))
+
 (defun ryan-python-expand-after-yasnippet ()
   (interactive)
   ;;2) Try indent at beginning of the line

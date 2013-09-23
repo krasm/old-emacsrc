@@ -4,6 +4,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/python")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/pymacs")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
 (push "~/prj/dotfiles/emacsrc/packages/org-mode/lisp" load-path)
 
 ;; misc stuff
@@ -39,8 +40,14 @@
 ;; yasnippet
 (load-library "emacs-rc-yasnippet")
 
+;; ido mode
+(load-library "emacs-rc-ido")
+
 ;; cedet 
 ;;(load-library "emacs-rc-cedet")
+
+;; cucumber mode 
+(load-library "emacs-rc-cucumber")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
