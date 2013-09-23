@@ -12,15 +12,15 @@
 
 (setq git-mergetool-emacsclient-ediff-active nil)
 
-(defun local-ediff-frame-maximize ()
-  (let* ((bounds (display-usable-bounds))
-     (x (nth 0 bounds))
-     (y (nth 1 bounds))
-     (width (/ (nth 2 bounds) (frame-char-width)))
-     (height (/ (nth 3 bounds) (frame-char-height))))
-    (set-frame-width (selected-frame) width)
-    (set-frame-height (selected-frame) height)
-    (set-frame-position (selected-frame) x y)))
+;; (defun local-ediff-frame-maximize ()
+;;   (let* ((bounds (display-usable-bounds))
+;;      (x (nth 0 bounds))
+;;      (y (nth 1 bounds))
+;;      (width (/ (nth 2 bounds) (frame-char-width)))
+;;      (height (/ (nth 3 bounds) (frame-char-height))))
+;;     (set-frame-width (selected-frame) width)
+;;     (set-frame-height (selected-frame) height)
+;;     (set-frame-position (selected-frame) x y)))
 
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 (setq ediff-split-window-function 'split-window-horizontally)
@@ -28,7 +28,7 @@
 (defun local-ediff-before-setup-hook ()
   (setq local-ediff-saved-frame-configuration (current-frame-configuration))
   (setq local-ediff-saved-window-configuration (current-window-configuration))
-  (local-ediff-frame-maximize)
+;;  (local-ediff-frame-maximize)
   (if git-mergetool-emacsclient-ediff-active
       (raise-frame)))
 

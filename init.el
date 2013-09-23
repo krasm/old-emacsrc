@@ -11,7 +11,9 @@
 (load-library "emacs-rc-misc")
 
 ;; color theme
-(load-library "emacs-rc-color-theme")
+(if (< emacs-major-version 24)
+    (load-library "emacs-rc-color-theme")
+  (load-theme 'misterioso t))
 
 ;; emacs server
 (load-library "emacs-rc-server")
@@ -23,7 +25,7 @@
 (load-library "emacs-rc-autocomplete")
 
 ;; python-mode
-(load-library "emacs-rc-python")
+;;(load-library "emacs-rc-python")
 
 ;; java stuff
 (load-library "emacs-rc-java")
@@ -38,7 +40,7 @@
 (load-library "emacs-rc-js")
 
 ;; yasnippet
-(load-library "emacs-rc-yasnippet")
+;;(load-library "emacs-rc-yasnippet")
 
 ;; ido mode
 (load-library "emacs-rc-ido")
