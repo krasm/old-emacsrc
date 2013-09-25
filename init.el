@@ -31,7 +31,7 @@
 (load-library "emacs-rc-java")
 
 ;; org mode
-;;(load-library "emacs-rc-org")
+(load-library "emacs-rc-org")
 
 ;; lua
 ;;(load-library "emacs-rc-lua")
@@ -50,6 +50,9 @@
 
 ;; cucumber mode 
 (load-library "emacs-rc-cucumber")
+
+;; ediff mode
+(load-library "emacs-rc-ediff")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
