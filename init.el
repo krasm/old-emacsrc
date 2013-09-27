@@ -5,6 +5,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/pymacs")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
+
 (push "~/prj/dotfiles/emacsrc/packages/org-mode/lisp" load-path)
 
 ;; misc stuff
