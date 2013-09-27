@@ -11,9 +11,9 @@
 (load-library "emacs-rc-misc")
 
 ;; color theme
-(if (< emacs-major-version 24)
-    (load-library "emacs-rc-color-theme")
-  (load-theme 'misterioso t))
+;;(if (< emacs-major-version 24)
+;;    (load-library "emacs-rc-color-theme")
+;;  (load-theme 'misterioso t))
 
 ;; emacs server
 (load-library "emacs-rc-server")
@@ -52,6 +52,9 @@
 (load-library "emacs-rc-cucumber")
 
 ;; ediff mode
+(load-library "emacs-rc-ediff")
+
+;; mutt support
 (load-library "emacs-rc-ediff")
 
 (custom-set-variables
