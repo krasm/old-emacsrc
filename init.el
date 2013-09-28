@@ -5,6 +5,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/pymacs")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
+
 (push "~/prj/dotfiles/emacsrc/packages/org-mode/lisp" load-path)
 
 ;; misc stuff
@@ -68,6 +69,7 @@
  '(nxml-auto-insert-xml-declaration-flag t)
  '(nxml-bind-meta-tab-to-complete-flag t)
  '(nxml-slash-auto-complete-flag t)
+ '(rng-schema-locating-files (quote ("~/.schemas/schemas.xml" "/usr/share/emacs/24.2/etc/schema/schemas.xml")))
  '(semanticdb-javap-classpath (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar"))
  '(tool-bar-mode nil))
 (custom-set-faces

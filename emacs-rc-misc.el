@@ -21,6 +21,9 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+;; speedbar
+(require 'sr-speedbar)
+
 ;; stolen from emacs wiki
 (defun delete-horizontal-space-forward () ; adapted from `delete-horizontal-space'
   "*Delete all spaces and tabs after point."
