@@ -4,6 +4,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/python")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/pymacs")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/scala-mode2")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
 
 (push "~/prj/dotfiles/emacsrc/packages/org-mode/lisp" load-path)
@@ -57,6 +58,9 @@
 
 ;; mutt support
 (load-library "emacs-rc-ediff")
+
+;; scala mode 
+(load-library "emacs-rc-scala")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
