@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003 Vladimir G. Sekissov
 
-;; Author: krasm <krasm@tp>
-;; Created: 2013-04-30 20:40:12+0100
+;; Author:  <a521286@DA342223.fmr.com>
+;; Created: 2013-10-09 10:34:27+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

@@ -16,8 +16,9 @@ You should have received a copy of the GNU General Public License
 along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>. -->
 
 <locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+  <uri resource="../prj/itec-data-hub/itec-hub-persistence/pom-liquibase.xml" uri="../prj/dotfiles/emacsrc/schemas/maven-4.0.0.rnc"/>
   <uri resource="../prj/itec-data-hub/itec-hub-persistence/src/main/resources/liquiBaseChangeLogs/r1.0/itec_dw/privileges.xml" uri="dbchangelog-3.0.rnc"/>
   <uri resource="../prj/itec-data-hub/itec-hub-persistence/pom.xml" uri="maven-4.0.0.rnc"/>
-  <namespace ns="http://maven.apache.org/POM/4.0.0" uri="maven-4.0.0.xsd"/>
+  <namespace ns="http://maven.apache.org/POM/4.0.0" uri="maven-4.0.0.rnc"/>
   <namespace ns="http://www.liquibase.org/xml/ns/dbchangelog" uri="dbchangelog-3.0.rnc"/>
 </locatingRules>

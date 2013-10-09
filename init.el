@@ -13,9 +13,9 @@
 (load-library "emacs-rc-misc")
 
 ;; color theme
-;;(if (< emacs-major-version 24)
-;;    (load-library "emacs-rc-color-theme")
-;;  (load-theme 'misterioso t))
+(if (< emacs-major-version 24)
+    (load-library "emacs-rc-color-theme")
+  (load-theme 'misterioso t))
 
 ;; emacs server
 (load-library "emacs-rc-server")
@@ -36,7 +36,7 @@
 (load-library "emacs-rc-org")
 
 ;; lua
-;;(load-library "emacs-rc-lua")
+;; (load-library "emacs-rc-lua")
 
 ;; java script and json
 (load-library "emacs-rc-js")
@@ -48,7 +48,7 @@
 (load-library "emacs-rc-ido")
 
 ;; cedet 
-;;(load-library "emacs-rc-cedet")
+(load-library "emacs-rc-cedet")
 
 ;; cucumber mode 
 (load-library "emacs-rc-cucumber")
