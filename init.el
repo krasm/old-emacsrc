@@ -1,8 +1,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/auto-complete-1.3.1")
-(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/python")
-(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/pymacs")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/python-mode")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/scala-mode2")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
@@ -26,8 +25,12 @@
 ;; autocomplete-mode
 (load-library "emacs-rc-autocomplete")
 
+
+;; add line to buffer to indicate end of lines
+(load-library "emacs-rc-fill-column-indicator.el")
+
 ;; python-mode
-;;(load-library "emacs-rc-python")
+(load-library "emacs-rc-python")
 
 ;; java stuff
 (load-library "emacs-rc-java")
