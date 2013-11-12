@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (eieio-defclass-autoload) "eieio-core" "eieio-core.el"
-;;;;;;  (20864 54622))
+;;;;;;  (21104 6585))
 ;;; Generated autoloads from eieio-core.el
 
 (autoload 'eieio-defclass-autoload "eieio-core" "\
@@ -20,7 +20,7 @@ It creates an autoload function for CNAME's constructor.
 ;;;***
 
 ;;;### (autoloads (customize-object) "eieio-custom" "eieio-custom.el"
-;;;;;;  (20864 54622))
+;;;;;;  (21104 6585))
 ;;; Generated autoloads from eieio-custom.el
 
 (autoload 'customize-object "eieio-custom" "\
@@ -33,7 +33,7 @@ Optional argument GROUP is the sub-group of slots to display.
 
 ;;;### (autoloads (eieio-describe-generic eieio-describe-constructor
 ;;;;;;  eieio-describe-class eieio-browse) "eieio-opt" "eieio-opt.el"
-;;;;;;  (20864 54622))
+;;;;;;  (21104 6585))
 ;;; Generated autoloads from eieio-opt.el
 
 (autoload 'eieio-browse "eieio-opt" "\
@@ -66,24 +66,8 @@ Also extracts information about all methods specific to this generic.
 
 ;;;***
 
-;;;### (autoloads (enable-visual-studio-bookmarks) "linemark" "linemark.el"
-;;;;;;  (20864 54622))
-;;; Generated autoloads from linemark.el
-
-(autoload 'enable-visual-studio-bookmarks "linemark" "\
-Bind the viss bookmark functions to F2 related keys.
-\\<global-map>
-\\[viss-bookmark-toggle]     - To=ggle a bookmark on this line.
-\\[viss-bookmark-next-buffer]   - Move to the next bookmark.
-\\[viss-bookmark-prev-buffer]   - Move to the previous bookmark.
-\\[viss-bookmark-clear-all-buffer] - Clear all bookmarks.
-
-\(fn)" t nil)
-
-;;;***
-
 ;;;### (autoloads nil nil ("chart.el" "eieio-base.el" "eieio-datadebug.el"
-;;;;;;  "eieio-speedbar.el" "eieio.el") (21077 8929 936632))
+;;;;;;  "eieio-speedbar.el" "eieio.el") (21104 9865 482666))
 
 ;;;***
 
