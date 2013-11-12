@@ -13,3 +13,10 @@
 [submodule "packages/feature-mode"]
 	path  = packages/feature-mode
 	url = https://github.com/michaelklishin/cucumber.el.git
+
+[submodule "packages/lintnode"]
+	path = packages/lintnode
+	url = https://github.com/davidmiller/lintnode.git
+[submodule "packages/js2-mode"]
+	path = packages/js2-mode
+	url = https://github.com/mooz/js2-mode.git
