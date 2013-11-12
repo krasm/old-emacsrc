@@ -1,7 +1,7 @@
 ;; java script mode
-(autoload 'js-mode "js" "Start js-mode" t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js-mode))
-(add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
+(autoload 'js2-mode "js2-mode" "Start js2-mode" t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 
 (defun beautify-json ()
   (interactive)

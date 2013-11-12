@@ -6,7 +6,10 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/scala-mode2")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
 
+(setq lintnode-location "~/prj/dotfiles/emacsrc/packages/lintnode")
+(push lintnode-location load-path)
 (push "~/prj/dotfiles/emacsrc/packages/org-mode/lisp" load-path)
+(push "~/prj/dotfiles/emacsrc/packages/js2-mode" load-path)
 
 ;; misc stuff
 (load-library "emacs-rc-misc")
@@ -64,6 +67,11 @@
 
 ;; scala mode 
 (load-library "emacs-rc-scala")
+
+;; java script mode
+(load-library "emacs-rc-lintnode")
+(load-library "emacs-rc-jscomint")
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
