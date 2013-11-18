@@ -162,20 +162,9 @@
 
 ;; Setup JAVA....
 (require 'semantic/db-javap)
-
-;; example of java-root project
-
-;; (ede-ant-project "Lucene" 
-;; 		       :file "~/work/lucene-solr/lucene-4.0.0/build.xml"
-;; 		       :srcroot '("core/src")
-;; 		       :classpath (cedet-files-list-recursively "~/work/lucene-solr/lucene-4.0.0/" ".*\.jar$")
-;; 		       )
-
-;; setting environment for java
-(custom-set-variables             ;; Инициализация переменных, указывающих, где 
-                                  ;; установлена java
+(custom-set-variables                       
  '(cedet-java-jdk-root (getenv "JAVA_HOME"))
- '(semanticdb-javap-classpath (lisp (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar")))
+ '(semanticdb-javap-classpath (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar"))
 )
 
 (require 'flymake)

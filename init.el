@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/auto-complete-1.3.1")
@@ -5,8 +6,12 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/scala-mode2")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/color-theme-6.6.0")
 
+(setq lintnode-location "~/prj/dotfiles/emacsrc/packages/lintnode")
+(push lintnode-location load-path)
 (push "~/prj/dotfiles/emacsrc/packages/org-mode/lisp" load-path)
+(push "~/prj/dotfiles/emacsrc/packages/js2-mode" load-path)
 
 ;; misc stuff
 (load-library "emacs-rc-misc")
@@ -27,10 +32,10 @@
 
 
 ;; add line to buffer to indicate end of lines
-(load-library "emacs-rc-fill-column-indicator.el")
+;;(load-library "emacs-rc-fill-column-indicator.el")
 
 ;; python-mode
-(load-library "emacs-rc-python")
+;;(load-library "emacs-rc-python")
 
 ;; java stuff
 (load-library "emacs-rc-java")
@@ -63,7 +68,13 @@
 (load-library "emacs-rc-ediff")
 
 ;; scala mode 
-(load-library "emacs-rc-scala")
+(if (>= emacs-major-version 24)
+    (load-library "emacs-rc-scala"))
+
+;; java script mode
+(load-library "emacs-rc-lintnode")
+(load-library "emacs-rc-jscomint")
+
 
 ;; SQL support
 (load-library "emacs-rc-sql")
