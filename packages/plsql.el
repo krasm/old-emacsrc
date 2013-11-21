@@ -175,7 +175,7 @@ This is up to 3 times faster, and hence, highly recommended."
 
 ;;;_  + Local Variables
 
-(defvar plsql-debug  nil
+(defvar plsql-debug  t
   "If t then we rebuild everything on reload. Useful for debugging.")
 
 (eval-when-compile (setq plsql-debug t))
@@ -1830,7 +1830,9 @@ save-excursion of `plsql-indent'."
 
 ;;;_  + Imenu
 
-(eval-and-compile (require 'imenu)) ;; quieten compiler
+(if (featurep 'ecb)
+    (eval-and-compile (require 'imenu)) ;; quieten compiler
+)
 
 (defvar  plsql-imenu-title "Contents"
   "*Title of the menu which will be added to the menu bar.")
