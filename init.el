@@ -32,7 +32,7 @@
 
 
 ;; add line to buffer to indicate end of lines
-;;(load-library "emacs-rc-fill-column-indicator.el")
+(load-library "emacs-rc-fill-column-indicator.el")
 
 ;; python-mode
 ;;(load-library "emacs-rc-python")
