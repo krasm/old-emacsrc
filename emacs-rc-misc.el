@@ -20,6 +20,9 @@
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
+(global-set-key "\M-?" 'help-command)
+(global-set-key "\C-h" 'delete-backward-char)
+(global-set-key "\M-\C-h" 'delete-horizontal-space)
 
 ;; speedbar
 (require 'sr-speedbar)
@@ -110,3 +113,13 @@
           (rename-buffer new-name)
           (set-visited-file-name new-name)
           (set-buffer-modified-p nil))))))
+
+(global-set-key "\M-\C-?" 'delete-horizontal-space)
+(global-set-key "\C-xn" 'other-window)
+
+(defun other-window-backward (&optional n)
+  "Select Nth previous window."
+  (interactive "p")
+  (other-window (- (or n 1)))
+)
+(global-set-key "\C-xp" 'other-window-backward)
