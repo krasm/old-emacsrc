@@ -56,7 +56,7 @@
 (load-library "emacs-rc-ido")
 
 ;; cedet 
-(load-library "emacs-rc-cedet")
+;;(load-library "emacs-rc-cedet")
 
 ;; cucumber mode 
 (load-library "emacs-rc-cucumber")
