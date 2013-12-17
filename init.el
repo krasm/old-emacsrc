@@ -50,7 +50,7 @@
 (load-library "emacs-rc-js")
 
 ;; yasnippet
-;;(load-library "emacs-rc-yasnippet")
+(load-library "emacs-rc-yasnippet")
 
 ;; ido mode
 (load-library "emacs-rc-ido")
@@ -85,6 +85,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cedet-java-jdk-root (getenv "JAVA_HOME"))
+ '(column-number-mode t)
+ '(display-time-mode t)
  '(ede-project-directories (quote ("/home/a521286/prj/misc/rtc-hib" "/home/a521286/erc/trunk")))
  '(nxml-attribute-indent 2)
  '(nxml-auto-insert-xml-declaration-flag t)
@@ -92,11 +94,12 @@
  '(nxml-slash-auto-complete-flag t)
  '(rng-schema-locating-files (quote ("~/.schemas/schemas.xml" "/usr/share/emacs/24.2/etc/schema/schemas.xml")))
  '(semanticdb-javap-classpath (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar"))
+ '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+ '(default ((t (:family "courier" :foundry "adobe" :slant normal :weight normal :height 128 :width normal)))))
 (put 'downcase-region 'disabled nil)
