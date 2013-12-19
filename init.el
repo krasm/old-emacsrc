@@ -2,6 +2,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/auto-complete-1.3.1")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/lua-mode")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/python-mode")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/yasnippet")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/scala-mode2")
@@ -44,7 +45,7 @@
 (load-library "emacs-rc-org")
 
 ;; lua
-;; (load-library "emacs-rc-lua")
+(load-library "emacs-rc-lua")
 
 ;; java script and json
 (load-library "emacs-rc-js")

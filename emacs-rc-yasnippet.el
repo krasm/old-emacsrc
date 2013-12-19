@@ -1,6 +1,7 @@
-;;(require 'yasnippet)
-;;(yas-global-mode t)
+(require 'yasnippet)
+(yas-global-mode t)
 
-;;(setq yas-snippet-dirs
-;;      '("~/.snippets"            ;; personal snippets
-;;	))
+(setq yas-snippet-dirs
+      '("~/.snippets"            ;; personal snippets
+	"~/prj/dotfiles/emacsrc/packages/yasnippet/snippets"
+	))
