@@ -4,3 +4,26 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key "\C-cc" 'org-capture)
+
+;; agenda files 
+(setq org-agenda-files (list "~/private/org/simple.org"
+			     "~/private/org/todo.org"))
+
+;; for lua integration
+;; update agenda file after changes to org files
+(defun th-org-mode-init ()
+  (add-hook 'after-save-hook 'th-org-update-agenda-file t t))
+
+(add-hook 'org-mode-hook 'th-org-mode-init)
+
+;; that's the export function
+(defun th-org-update-agenda-file (&optional force)
+  (interactive)
+  (save-excursion
+    (save-window-excursion
+      (let ((file "~/tmp/org-agenda.txt"))
+        (org-agenda-list)
+        (org-agenda-write file)))))
+
+;; do it once at startup
+(th-org-update-agenda-file t)
