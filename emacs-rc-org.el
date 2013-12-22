@@ -5,6 +5,8 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key "\C-cc" 'org-capture)
 
+(setq org-directory "~/private/org")
+(setq org-mobile-inbox-for-pull "~/private/org/inbox")
 ;; agenda files 
 (setq org-agenda-files (list "~/private/org/simple.org"
 			     "~/private/org/todo.org"))
@@ -27,3 +29,7 @@
 
 ;; do it once at startup
 (th-org-update-agenda-file t)
+
+;; mobile org
+(setq org-mobile-directory "~/Dropbox/MobileOrg")
+(setq org-mobile-use-encryption t)
