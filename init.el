@@ -44,6 +44,10 @@
 ;; org mode
 (load-library "emacs-rc-org")
 
+;; cc-mode 
+(load-library "emacs-rc-cc-mode")
+
+
 ;; lua
 (load-library "emacs-rc-lua")
 
