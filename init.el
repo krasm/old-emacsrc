@@ -8,6 +8,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/scala-mode2")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/color-theme-6.6.0")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/org/lisp")
 
 (setq lintnode-location "~/prj/dotfiles/emacsrc/packages/lintnode")
 (push lintnode-location load-path)
@@ -85,22 +86,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(cedet-java-jdk-root (getenv "JAVA_HOME"))
- '(column-number-mode t)
- '(display-time-mode t)
- '(ede-project-directories (quote ("/home/a521286/prj/misc/rtc-hib" "/home/a521286/erc/trunk")))
  '(nxml-attribute-indent 2)
  '(nxml-auto-insert-xml-declaration-flag t)
  '(nxml-bind-meta-tab-to-complete-flag t)
  '(nxml-slash-auto-complete-flag t)
- '(rng-schema-locating-files (quote ("~/.schemas/schemas.xml" "/usr/share/emacs/24.2/etc/schema/schemas.xml")))
- '(semanticdb-javap-classpath (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar"))
- '(show-paren-mode t)
- '(tool-bar-mode nil))
+ '(org-agenda-files nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "courier" :foundry "adobe" :slant normal :weight normal :height 128 :width normal)))))
+ )
 (put 'downcase-region 'disabled nil)
