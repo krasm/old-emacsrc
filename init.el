@@ -83,7 +83,12 @@
 
 
 ;; SQL support
-(load-library "emacs-rc-sql")
+;; quick hack - on my chrome book
+;; I do not need sqlplus, and on chrome 
+;; I'm running emacs n console
+(if (display-images-p)
+    (load-library "emacs-rc-sql")
+  )
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
