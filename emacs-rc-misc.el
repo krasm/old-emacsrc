@@ -24,6 +24,9 @@
 (global-set-key "\C-h" 'delete-backward-char)
 (global-set-key "\M-\C-h" 'delete-horizontal-space)
 
+;; always use spaces to indent
+(setq-default indent-tabs-mode nil)
+
 ;; speedbar
 (require 'sr-speedbar)
 

@@ -55,13 +55,13 @@
 (load-library "emacs-rc-js")
 
 ;; yasnippet
-;;(load-library "emacs-rc-yasnippet")
+(load-library "emacs-rc-yasnippet")
 
 ;; ido mode
 (load-library "emacs-rc-ido")
 
 ;; cedet 
-;;(load-library "emacs-rc-cedet")
+(load-library "emacs-rc-cedet")
 
 ;; cucumber mode 
 (load-library "emacs-rc-cucumber")
