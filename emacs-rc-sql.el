@@ -1,8 +1,7 @@
 ;; SQL and oracle configuration
-
 (require 'plsql)
 (setq auto-mode-alist
-      (append '(("\\.pls\\'" . plsql-mode) ("\\.pkg\\'" . plsql-mode)
+      (append '(("\\.(point)ls\\'" . plsql-mode) ("\\.pkg\\'" . plsql-mode)
  		("\\.pks\\'" . plsql-mode) ("\\.pkb\\'" . plsql-mode)
  		("\\.sql\\'" . plsql-mode) ("\\.PLS\\'" . plsql-mode) 
  		("\\.PKG\\'" . plsql-mode) ("\\.PKS\\'" . plsql-mode)

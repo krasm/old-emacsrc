@@ -8,6 +8,7 @@
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/scala-mode2")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/feature-mode/feature-mode-0.4")
 (add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/color-theme-6.6.0")
+(add-to-list 'load-path "~/prj/dotfiles/emacsrc/packages/org/lisp")
 
 (setq lintnode-location "~/prj/dotfiles/emacsrc/packages/lintnode")
 (push lintnode-location load-path)
@@ -82,26 +83,27 @@
 
 
 ;; SQL support
-(load-library "emacs-rc-sql")
+;; quick hack - on my chrome book
+;; I do not need sqlplus, and on chrome 
+;; I'm running emacs n console
+(if (display-images-p)
+    (load-library "emacs-rc-sql")
+  )
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(cedet-java-jdk-root (getenv "JAVA_HOME"))
- '(ede-project-directories (quote ("/home/a521286/prj/misc/rtc-hib" "/home/a521286/erc/trunk")))
  '(nxml-attribute-indent 2)
  '(nxml-auto-insert-xml-declaration-flag t)
  '(nxml-bind-meta-tab-to-complete-flag t)
  '(nxml-slash-auto-complete-flag t)
- '(rng-schema-locating-files (quote ("~/.schemas/schemas.xml" "/usr/share/emacs/24.2/etc/schema/schemas.xml")))
- '(semanticdb-javap-classpath (concat (getenv "JAVA_HOME") "/jre/lib/rt.jar"))
- '(tool-bar-mode nil))
+ '(org-agenda-files nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+ )
 (put 'downcase-region 'disabled nil)
