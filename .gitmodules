@@ -1,15 +1,12 @@
 [submodule "packages/auto-complete"]
 	path = packages/auto-complete
 	url = http://cx4a.org/repo/auto-complete.git
-
-[submodule "packages/org"]
-	path  = packages/org
-	url = http://repo.or.cz/r/org-mode.git
-
 [submodule "packages/scala-mode2"]
 	path = packages/scala-mode2
 	url = https://github.com/hvesalai/scala-mode2.git
-
+[submodule "packages/org"]
+    path=packages/org
+    url=git://orgmode.org/org-mode.git
 [submodule "packages/feature-mode"]
 	path  = packages/feature-mode
 	url = https://github.com/michaelklishin/cucumber.el.git
@@ -29,3 +26,6 @@
 [submodule "packages/lua-mode"]
 	path = packages/lua-mode
 	url = https://github.com/immerrr/lua-mode.git
+[submodule "packages/magit"]
+	path = packages/magit
+	url = https://github.com/magit/magit.git
