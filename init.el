@@ -84,6 +84,8 @@
 (load-library "emacs-rc-lintnode")
 (load-library "emacs-rc-jscomint")
 
+;; magit
+(load-library "emacs-rc-magit")
 
 ;; SQL support
 ;; quick hack - on my chrome book
