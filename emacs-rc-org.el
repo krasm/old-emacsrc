@@ -8,8 +8,8 @@
 (setq org-directory "~/private/org")
 (setq org-mobile-inbox-for-pull "~/private/org/inbox")
 ;; agenda files 
-(setq org-agenda-files (list "~/private/org/simple.org"
-			     "~/private/org/todo.org"))
+;;(setq org-agenda-files (list "~/private/org/simple.org"
+;;			     "~/private/org/todo.org"))
 
 ;; for lua integration
 ;; update agenda file after changes to org files

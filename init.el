@@ -1,4 +1,4 @@
-(defconst conf-dir "~/priv/misc/emacsrc")
+(defconst conf-dir "~/prj/dotfiles/emacsrc")
 
 (add-to-list 'load-path conf-dir)
 (add-to-list 'load-path (concat conf-dir "/packages"))
@@ -104,7 +104,7 @@
  '(nxml-auto-insert-xml-declaration-flag t)
  '(nxml-bind-meta-tab-to-complete-flag t)
  '(nxml-slash-auto-complete-flag t)
- '(org-agenda-files nil))
+ '(org-agenda-files (quote ("~/private/org/todo.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
