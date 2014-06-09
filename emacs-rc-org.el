@@ -5,12 +5,20 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key "\C-cc" 'org-capture)
 
-(setq org-directory "~/private/org")
-(setq org-mobile-inbox-for-pull "~/private/org/inbox")
+;;(setq org-directory "~/private/org")
+;;(setq org-mobile-inbox-for-pull "~/private/org/inbox")
 ;; agenda files 
-(setq org-agenda-files (list "~/private/org/simple.org"
-			     "~/private/org/todo.org"))
+(if (getenv "ORG_MODE_FILES")
+    (setq org-agenda-files (list (getenv "ORG_MODE_FILES")))
+  (setq org-agenda-files (list "~/priv/org/simple.org"
+                               "~/priv/org/todo.org"))
+  )
 
+;; todo lists
+(setq org-todo-keywords
+      '((sequence "TODO" "FEEDBACK" "VERIFY" | "DONE" "DELEGATED")))
+
+(setq org-log-done 'note)
 ;; for lua integration
 ;; update agenda file after changes to org files
 (defun th-org-mode-init ()
