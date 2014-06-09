@@ -12,6 +12,17 @@
 (require 'recentf)
 (recentf-mode 1)
 
+;; backup files
+(setq
+ backup-by-copying t      ; don't clobber symlinks
+ backup-directory-alist
+ '(("." . "~/tmp/"))    ; don't litter my fs tree
+ delete-old-versions t
+ kept-new-versions 6
+ kept-old-(vector )ersions 2
+ version-control t)       ; use versioned backups
+
+
 (setq inhibit-startup-screen t)
 
 ;; global key bindings
@@ -126,3 +137,6 @@
   (other-window (- (or n 1)))
 )
 (global-set-key "\C-xp" 'other-window-backward)
+
+(require 'epa-file)
+(epa-file-enable)

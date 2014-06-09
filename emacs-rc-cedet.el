@@ -73,6 +73,8 @@
 (when (cedet-ectag-version-check t)
   (semantic-load-enable-primary-ectags-support))
 
+(setq semantic-idle-scheduler-idle-time 7)
+
 ;; SRecode
 (global-srecode-minor-mode 1)
 
@@ -81,11 +83,11 @@
 (ede-enable-generic-projects)
 
 ;; helper for boost setup...
-;;efun c++-setup-boost (boost-root)
-;;(when (file-accessible-directory-p boost-root)
-;;  (let ((cfiles (cedet-files-list-recursively boost-root "\\(config\\|user\\)\\.hpp")))
-;;    (dolist (file cfiles)
-;;      (add-to-list 'semantic-lex-c-preprocessor-symbol-file file)))))
+defun c++-setup-boost (boost-root)
+(when (file-accessible-directory-p boost-root)
+  (let ((cfiles (cedet-files-list-recursively boost-root "\\(config\\|user\\)\\.hpp")))
+    (dolist (file cfiles)
+      (add-to-list 'semantic-lex-c-preprocessor-symbol-file file)))))
 
 
 ;; my functions for EDE
@@ -141,24 +143,24 @@
 
 ;;; Projects
 
-;; cpp-tests project definition
-(when (file-exists-p "~/projects/lang-exp/cpp/CMakeLists.txt")
-  (setq cpp-tests-project
-	(ede-cpp-root-project "cpp-tests"
-			      :file "~/projects/lang-exp/cpp/CMakeLists.txt"
-			      :system-include-path '("/home/ott/exp/include"
-						     boost-base-directory)
-			      :compile-command "cd Debug && make -j2"
-			      )))
+;; ;; cpp-tests project definition
+;; (when (file-exists-p "~/projects/lang-exp/cpp/CMakeLists.txt")
+;;   (setq cpp-tests-project
+;; 	(ede-cpp-root-project "cpp-tests"
+;; 			      :file "~/projects/lang-exp/cpp/CMakeLists.txt"
+;; 			      :system-include-path '("/home/ott/exp/include"
+;; 						     boost-base-directory)
+;; 			      :compile-command "cd Debug && make -j2"
+;; 			      )))
 
-(when (file-exists-p "~/projects/squid-gsb/README")
-  (setq squid-gsb-project
-	(ede-cpp-root-project "squid-gsb"
-			      :file "~/projects/squid-gsb/README"
-			      :system-include-path '("/home/ott/exp/include"
-						     boost-base-directory)
-			      :compile-command "cd Debug && make -j2"
-			      )))
+;; (when (file-exists-p "~/projects/squid-gsb/README")
+;;   (setq squid-gsb-project
+;; 	(ede-cpp-root-project "squid-gsb"
+;; 			      :file "~/projects/squid-gsb/README"
+;; 			      :system-include-path '("/home/ott/exp/include"
+;; 						     boost-base-directory)
+;; 			      :compile-command "cd Debug && make -j2"
+;; 			      )))
 
 ;; Setup JAVA....
 (require 'semantic/db-javap)
@@ -179,3 +181,6 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
+
+;; setup projcets 
+(load "~/.emacs.d/cedet.projects")
