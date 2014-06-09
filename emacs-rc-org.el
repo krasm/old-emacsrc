@@ -8,11 +8,8 @@
 ;;(setq org-directory "~/private/org")
 ;;(setq org-mobile-inbox-for-pull "~/private/org/inbox")
 ;; agenda files 
-(if (getenv "ORG_MODE_FILES")
-    (setq org-agenda-files (list (getenv "ORG_MODE_FILES")))
-  (setq org-agenda-files (list "~/priv/org/simple.org"
-                               "~/priv/org/todo.org"))
-  )
+;;(setq org-agenda-files (list "~/private/org/simple.org"
+;;			     "~/private/org/todo.org"))
 
 ;; todo lists
 (setq org-todo-keywords
