@@ -25,6 +25,10 @@
 
 (setq inhibit-startup-screen t)
 
+;; use ibuffer for buffer listing
+(defalias 'list-buffers 'ibuffer)
+
+
 ;; global key bindings
 (global-set-key "\C-xg" 'goto-line)
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
